@@ -1,0 +1,89 @@
+[debug] [2021-04-30T05:41:42.624Z] ----------------------------------------------------------------------
+[debug] [2021-04-30T05:41:42.626Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LONG\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-30T05:41:42.626Z] CLI Version:   9.10.0
+[debug] [2021-04-30T05:41:42.626Z] Platform:      win32
+[debug] [2021-04-30T05:41:42.626Z] Node Version:  v12.18.0
+[debug] [2021-04-30T05:41:42.627Z] Time:          Fri Apr 30 2021 12:41:42 GMT+0700 (Indochina Time)
+[debug] [2021-04-30T05:41:42.627Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-30T05:41:42.634Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-30T05:41:42.634Z] > authorizing via signed-in user (dolong2310@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\LONG\Desktop\youtube-app-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using yt-abb. 
+[debug] [2021-04-30T05:41:45.803Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/yt-abb [none]
+[debug] [2021-04-30T05:41:46.317Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/yt-abb 200
+[debug] [2021-04-30T05:41:46.317Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/yt-abb {"projectId":"yt-abb","projectNumber":"920318962760","displayName":"youtube-app","name":"projects/yt-abb","resources":{"hostingSite":"yt-abb"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote build/404.html 
+[debug] [2021-04-30T05:41:55.865Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-04-30T05:41:56.044Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-04-30T05:41:56.044Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.4.3","browserURL":"https://www.gstatic.com/firebasejs/8.4.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.4.3/firebase.tgz"},"live":{"version":"8.4","browserURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.4.3/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.4.3/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.4.3/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.4.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.4.3/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\LONG\Desktop\youtube-app-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=463116086&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-04-30T05:41:57.594Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"2f2fdfda31a4f6276db3","redirect_uri":"http://localhost:9005","state":"463116086"}
+[debug] [2021-04-30T05:41:58.054Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 30 Apr 2021 05:41:58 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"fbe5d3ffddbe1cf760e4419be77a8cf8\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"E31F:3181:20CEB5:2CCEBB:608B98A6"}
+[debug] [2021-04-30T05:41:58.056Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-04-30T05:41:58.555Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-04-30T05:41:58.555Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"dolong2310","id":50714374,"node_id":"MDQ6VXNlcjUwNzE0Mzc0","avatar_url":"https://avatars.githubusercontent.com/u/50714374?v=4","gravatar_id":"","url":"https://api.github.com/users/dolong2310","html_url":"https://github.com/dolong2310","followers_url":"https://api.github.com/users/dolong2310/followers","following_url":"https://api.github.com/users/dolong2310/following{/other_user}","gists_url":"https://api.github.com/users/dolong2310/gists{/gist_id}","starred_url":"https://api.github.com/users/dolong2310/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dolong2310/subscriptions","organizations_url":"https://api.github.com/users/dolong2310/orgs","repos_url":"https://api.github.com/users/dolong2310/repos","events_url":"https://api.github.com/users/dolong2310/events{/privacy}","received_events_url":"https://api.github.com/users/dolong2310/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":0,"followers":0,"following":0,"created_at":"2019-05-16T17:26:15Z","updated_at":"2021-04-30T05:01:49Z","private_gists":1,"total_private_repos":7,"owned_private_repos":7,"disk_usage":42363,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as dolong2310 
+[info] 
+[debug] [2021-04-30T05:42:28.352Z] >>> [apiv2][query] GET https://api.github.com/repos/.github/workflows/main.yml/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:42:28.717Z] <<< [apiv2][status] GET https://api.github.com/repos/.github/workflows/main.yml/actions/secrets/public-key 404
+[debug] [2021-04-30T05:42:28.717Z] <<< [apiv2][body] GET https://api.github.com/repos/.github/workflows/main.yml/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-30T05:42:34.539Z] >>> [apiv2][query] GET https://api.github.com/repos/.github/workflows/main.yml/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:42:34.906Z] <<< [apiv2][status] GET https://api.github.com/repos/.github/workflows/main.yml/actions/secrets/public-key 404
+[debug] [2021-04-30T05:42:34.906Z] <<< [apiv2][body] GET https://api.github.com/repos/.github/workflows/main.yml/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-30T05:42:38.297Z] >>> [apiv2][query] GET https://api.github.com/repos/.github/workflows/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:42:38.661Z] <<< [apiv2][status] GET https://api.github.com/repos/.github/workflows/actions/secrets/public-key 404
+[debug] [2021-04-30T05:42:38.661Z] <<< [apiv2][body] GET https://api.github.com/repos/.github/workflows/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-04-30T05:42:40.704Z] >>> [apiv2][query] GET https://api.github.com/repos/.github/workflows//actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:42:41.064Z] <<< [apiv2][status] GET https://api.github.com/repos/.github/workflows//actions/secrets/public-key 404
+[debug] [2021-04-30T05:42:41.065Z] <<< [apiv2][body] GET https://api.github.com/repos/.github/workflows//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-30T05:42:43.281Z] >>> [apiv2][query] GET https://api.github.com/repos/.github/workflows/main/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:42:43.660Z] <<< [apiv2][status] GET https://api.github.com/repos/.github/workflows/main/actions/secrets/public-key 404
+[debug] [2021-04-30T05:42:43.661Z] <<< [apiv2][body] GET https://api.github.com/repos/.github/workflows/main/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-30T05:42:52.055Z] >>> [apiv2][query] GET https://api.github.com/repos/github/workflows/main.yml/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:42:52.478Z] <<< [apiv2][status] GET https://api.github.com/repos/github/workflows/main.yml/actions/secrets/public-key 404
+[debug] [2021-04-30T05:42:52.478Z] <<< [apiv2][body] GET https://api.github.com/repos/github/workflows/main.yml/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-30T05:44:25.396Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/settings/applications/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:44:25.754Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/settings/applications/actions/secrets/public-key 404
+[debug] [2021-04-30T05:44:25.754Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/settings/applications/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-30T05:44:48.030Z] >>> [apiv2][query] GET https://api.github.com/repos/github-action-yoututbe-app/actions/secrets/public-key type=owner
+[debug] [2021-04-30T05:44:48.406Z] <<< [apiv2][status] GET https://api.github.com/repos/github-action-yoututbe-app/actions/secrets/public-key 404
+[debug] [2021-04-30T05:44:48.406Z] <<< [apiv2][body] GET https://api.github.com/repos/github-action-yoututbe-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
